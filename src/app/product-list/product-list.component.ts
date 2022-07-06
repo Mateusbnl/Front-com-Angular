@@ -5,16 +5,18 @@ import { products } from '../products';
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css']
+  styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent {
   products = products;
 
   share() {
-    window.alert('The product has been shared!');
+    window.alert('Esse produto foi compartilhado!');
+  }
+  onNotify() {
+    window.alert('Você vai ser notificado quando o produto for à venda');
   }
 }
-
 
 /*
 Copyright Google LLC. All Rights Reserved.
